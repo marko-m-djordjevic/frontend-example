@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Space</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="swiper/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="lightbox/lightbox.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="swiper/swiper.min.js"></script>
+        <script src="lightbox/lightbox.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-wrapper">
+                <ul>
+                    <li class="home-button page-active" >HOME</li>
+                    <li class="collection-button" >COLLECTION</li>
+                    <li class="about-button" >ABOUT</li>
+                </ul>
+            </div>
+        </header>
+        <div class="home-page">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/earth.jpg" alt="Earth">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/jupiter.jpg" alt="Jupiter">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/moon.jpg" alt="Moon">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/saturn.jpg" alt="Saturn">
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="btn-next-wrap">
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+                <div class="btn-prev-wrap">
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+            </div>
+        </div>
+        <div class="collectio-page">
+            <div class="collectio-page-wrapper">
+                <div class="image-holder" >
+                    <a href="images/nebula.jpg" data-lightbox="collection">
+                        <img src="images/nebula.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 1</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-holder" >
+                    <a href="images/nebula2.jpg" data-lightbox="collection">
+                        <img src="images/nebula2.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 2</h3>
+                        </div>
+                    </a>
+                </div> 
+                <div class="image-holder" >
+                    <a href="images/nebula3.jpg" data-lightbox="collection">
+                        <img src="images/nebula3.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 3</h3>
+                        </div>
+                    </a>
+                </div> 
+                <div class="image-holder" >
+                    <a href="images/nebula4.jpg" data-lightbox="collection">
+                        <img src="images/nebula4.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 4</h3>
+                        </div>
+                    </a>
+                </div> 
+                <div class="image-holder" >
+                    <a href="images/nebula5.jpg" data-lightbox="collection">
+                        <img src="images/nebula5.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 5</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-holder" >
+                    <a href="images/nebula6.jpg" data-lightbox="collection">
+                        <img src="images/nebula6.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 6</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-holder" >
+                    <a href="images/nebula.jpg" data-lightbox="collection">
+                        <img src="images/nebula.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 7</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="image-holder" >
+                    <a href="images/nebula2.jpg" data-lightbox="collection">
+                        <img src="images/nebula2.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 8</h3>
+                        </div>
+                    </a>
+                </div> 
+                <div class="image-holder" >
+                    <a href="images/nebula3.jpg" data-lightbox="collection">
+                        <img src="images/nebula3.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 9</h3>
+                        </div>
+                    </a>
+                </div> 
+                <div class="image-holder" >
+                    <a href="images/nebula4.jpg" data-lightbox="collection">
+                        <img src="images/nebula4.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 10</h3>
+                        </div>
+                    </a>
+                </div> 
+                <div class="image-holder" >
+                    <a href="images/nebula5.jpg" data-lightbox="collection">
+                        <img src="images/nebula5.jpg" alt="Nebula">
+                        <div class="title">
+                            <h3>Title 11</h3>
+                        </div>
+                    </a>
+                </div>
+                
+
+                <div class="clear"></div>
+                <div class="arrow-up">
+                    <img src="images/arrow.png" alt="Arrow up">
+                </div>
+                <div class="arrow-down">
+                    <img src="images/arrow.png" alt="Arrow down">
+                </div>
+            </div>
+        </div>
+        <div class="about-page">
+            <img src="images/kilonova.jpg" alt="Kilonova">
+        </div>
+
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                nextButton: '.btn-next-wrap',
+                prevButton: '.btn-prev-wrap',
+                spaceBetween: 0,
+                simulateTouch: false,
+            });
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,183 @@
+body{
+    overflow: hidden;
+    margin: 0;
+}
+.clear{
+    clear: both;
+}
+.logo{
+    position: absolute;
+    z-index: 9;
+    width: 100px;
+    margin: 20px;
+}
+.logo img{
+    width: 100%;
+    display: block;
+}
+li{
+    display: inline-block;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+li.page-active{
+    background-color: #8a2246;
+}
+ul{
+    text-align: right;
+    padding: 0 115px 0 0;
+    margin: 0;
+    height: 58px;
+}
+.header-wrapper{
+    background-color: rgba(80, 13, 34, 0.9);
+    color:white;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    bottom: 0;
+    overflow: hidden;
+    transition:all 500ms;
+}
+.home-page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    transition:all 500ms;
+}
+.swiper-slide img{
+    width:100%;
+    height: 100%;
+}
+.swiper-wrapper{
+    height: 100vh;
+}
+.collectio-page{
+    height: 100vh;
+    background-color: #A0A045;
+    position: absolute;
+    overflow: hidden;
+}
+.about-page{
+    position: relative;
+    height: 100vh;
+    background-color: #ad3f3f;
+    top: -100vh;
+    right: -100vw;
+    z-index: 99;
+    transition:all 500ms;
+}
+.about-page img{
+    width: 100%;
+    height: 100%;
+}
+.right-prev{
+    position: absolute;
+    top: calc(50% - 50px);
+    right: -178px;
+    z-index: 9;
+    transition:all 0.5s;
+    pointer-events: none;
+}
+.right-prev img{
+    width: auto;
+    height: 100px;
+    display: block;
+}
+.swiper-button-next{
+    height: 100px;
+    background-color: rgba(80, 13, 34, 0.9);
+    right: 0;
+    width: 35px;
+    margin-top: -50px;
+}
+.swiper-button-next:hover + .right-prev{
+    right: 35px;
+    transition:all 0.5s;
+}
+.left-prev{
+    position: absolute;
+    top: calc(50% - 50px);
+    left: -178px;
+    z-index: 9;
+    transition: all 0.5s;
+    pointer-events: none;
+}
+.left-prev img{
+    width: auto;
+    height: 100px;
+    display: block;
+}
+.swiper-button-prev{
+    height: 100px;
+    background-color: rgba(80, 13, 34, 0.9);
+    left: 0;
+    width: 35px;
+    margin-top: -50px;
+}
+.swiper-button-prev:hover + .left-prev{
+    left: 35px;
+    transition:all 0.5s;
+}
+.collectio-page .image-holder{
+    width: 25%;
+    height: 525px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.image-holder img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.image-holder .title{
+    position: absolute;
+    bottom: -30%;
+    width: 100%;
+    text-align: center;
+    height: 30%;
+    transition: all 0.5s;
+    background-color: rgba(80, 13, 34, 0.9);
+    color: white;
+}
+.image-holder:hover .title{
+    bottom: 0;
+}
+.image-holder .title h3{
+    margin: 0;
+    transform: translate(0, -50%);
+    top: 50%;
+    position: relative;
+}
+.arrow-up{
+    width: 7%;
+    height: 50px;
+    background-color: rgba(80, 13, 34, 0.9);
+    position: absolute;
+    z-index: 100;
+    bottom: 25px;
+    left: 40%;
+    text-align: center;
+}
+.arrow-up img{
+    height: 100%;
+    transform: rotate(180deg);
+}
+.arrow-down{
+    width: 7%;
+    height: 50px;
+    background-color: rgba(80, 13, 34, 0.9);
+    position: absolute;
+    z-index: 100;
+    bottom: 25px;
+    right: 40%;
+    text-align: center;
+}
+.arrow-down img{
+    height: 100%;
+}
+.collectio-page-wrapper{
+    transition: all 0.3s;
+}
